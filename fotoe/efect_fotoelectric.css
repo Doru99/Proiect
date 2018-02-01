@@ -208,6 +208,11 @@ yellow{
     background-color:rgba(0,0,0,0.5);
 }
 
+#lege_img{
+    background-color: rgba(0,0,0,0.5);
+    background-image: url(imagini/grafic.png);
+}
+
 #energie_cont{
     transition:1s all;
     display: inline-block;
@@ -221,5 +226,5 @@ yellow{
 
 #energie_img{
     background-color:rgba(0,0,0,0);
-    background-image:url(imagini/efect_fotoe.png);
+    background-image:url(imagini/ConservareEnergie.png);
 }

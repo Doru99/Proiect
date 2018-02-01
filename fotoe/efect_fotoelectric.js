@@ -133,6 +133,8 @@ window.onload = function (){
         numar[i].style.height=0.05*y0+'px';
     }
     
+    document.getElementById("lege_img").style.width=0.8*x0+'px';
+    document.getElementById("lege_img").style.height=0.15*y0+'px';
     
     $(".resizeText5").resizeText0();
     $(".resizeText6").resizeText0();
