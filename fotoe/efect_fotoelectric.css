@@ -205,14 +205,15 @@ yellow{
 
 .lege_en{
     transition:1s all;
-    display: inline-block;
     vertical-align: middle;
     background-color:rgba(0,0,0,0);
+    float: right;
 }
 
 #lege_img{
     background-color: rgba(0,0,0,0);
     background-image: url(imagini/grafic.png);
+    float: left;
 }
 
 #energie_cont{

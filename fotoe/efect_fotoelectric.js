@@ -88,11 +88,10 @@ window.onload = function (){
         })
 	}
     
-    document.getElementById("def_cont").style.marginLeft=0.03*x0+'px';
+    document.getElementById("def_cont").style.marginLeft=0.04*x0+'px';
     document.getElementById("def_titlu").style.height=0.1*y0+"px";
     document.getElementById("def_titlu").style.width=0.3*x0+'px';
     document.getElementById("def_titlu").style.marginTop=0.05*y0+'px';
-    
     document.getElementById("def_desc").style.width=0.3*x0+'px';
     document.getElementById("def_desc").style.height=0.3*y0+'px';
     
@@ -100,7 +99,7 @@ window.onload = function (){
     $(".resizeText1").resizeText0();
     
     document.getElementById("elem_cont").style.marginTop=0.05*y0+'px';
-    document.getElementById("elem_cont").style.marginLeft=0.03*x0+"px";
+    document.getElementById("elem_cont").style.marginLeft=0.1*x0+"px";
     document.getElementById("aop_text").style.marginTop=0.05*y0+'px';
     document.getElementById("aop_text").style.width=0.5*x0+'px';
     document.getElementById("aop_text").style.height=0.2*y0+'px';
@@ -120,18 +119,27 @@ window.onload = function (){
     var enunt=document.getElementsByClassName("lege_en");
     var numar=document.getElementsByClassName("lege_numar");
     
-    for (var i = 0; i < cont.length; i++) {
+    for (var i = 0; i < cont.length; i+= 2) {
         cont[i].style.marginTop=0.08*y0+'px';
-        cont[i].style.marginLeft=0.05*x0+'px';
-        enunt[i].style.width=0.4*x0+'px';
+        cont[i].style.marginLeft=0.25*x0+'px';
+        enunt[i].style.width=0.5*x0+'px';
         enunt[i].style.height=0.3*y0+'px';
-        numar[i].style.width=0.4*x0+'px';
+        numar[i].style.width=0.5*x0+'px';
         numar[i].style.height=0.075*y0+'px';
     }
-    enunt[1].style.height=0.125*y0+'px';
+    for (var i = 1; i < cont.length; i+= 2) {
+        cont[i].style.marginTop=0.08*y0+'px';
+        cont[i].style.marginLeft=0.1*x0+'px';
+        enunt[i].style.width=0.8*x0+'px';
+        enunt[i].style.height=0.3*y0+'px';
+        numar[i].style.width=0.8*x0+'px';
+        numar[i].style.height=0.075*y0+'px';
+    }
+    enunt[1].style.width=0.4*x0+'px';
     document.getElementById("lege_img").style.width=0.4*x0+'px';
     document.getElementById("lege_img").style.height=0.174*y0+'px';
     document.getElementById("lege_img").style.marginBottom=0.01*y0+'px';
+    document.getElementById("lege_img").style.marginTop=0.05*y0+'px';
     
     $(".resizeText5").resizeText0();
     $(".resizeText6").resizeText0();
