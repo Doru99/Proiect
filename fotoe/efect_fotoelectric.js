@@ -89,7 +89,6 @@ window.onload = function (){
 	}
     
     document.getElementById("def_cont").style.marginLeft=0.03*x0+'px';
-    
     document.getElementById("def_titlu").style.height=0.1*y0+"px";
     document.getElementById("def_titlu").style.width=0.3*x0+'px';
     document.getElementById("def_titlu").style.marginTop=0.05*y0+'px';
@@ -102,16 +101,13 @@ window.onload = function (){
     
     document.getElementById("elem_cont").style.marginTop=0.05*y0+'px';
     document.getElementById("elem_cont").style.marginLeft=0.03*x0+"px";
-    document.getElementById("aop_cont").style.marginLeft=0.5*0.05*x0+'px';
-     document.getElementById("aop_cont").style.marginRight=0.5*0.05*x0+'px';
-
     document.getElementById("aop_text").style.marginTop=0.05*y0+'px';
     document.getElementById("aop_text").style.width=0.5*x0+'px';
     document.getElementById("aop_text").style.height=0.2*y0+'px';
     document.getElementById("aop_img").style.width=0.5*x0+'px';
     document.getElementById("aop_img").style.height=0.35*y0+'px';
     
-    document.getElementById("elem_titlu").style.width=0.6*x0+'px';
+    document.getElementById("elem_titlu").style.width=0.5*x0+'px';
     document.getElementById("elem_titlu").style.height=0.1*y0+'px';
     $(".resizeText2").resizeText0();
     $(".resizeText3").resizeText0();
@@ -126,15 +122,16 @@ window.onload = function (){
     
     for (var i = 0; i < cont.length; i++) {
         cont[i].style.marginTop=0.08*y0+'px';
-        cont[i].style.marginLeft=0.1*x0+'px';
-        enunt[i].style.width=0.8*x0+'px';
-        enunt[i].style.height=0.1*x0+'px';
-        numar[i].style.width=0.8*x0+'px';
-        numar[i].style.height=0.05*y0+'px';
+        cont[i].style.marginLeft=0.05*x0+'px';
+        enunt[i].style.width=0.4*x0+'px';
+        enunt[i].style.height=0.3*y0+'px';
+        numar[i].style.width=0.4*x0+'px';
+        numar[i].style.height=0.075*y0+'px';
     }
-    
-    document.getElementById("lege_img").style.width=0.8*x0+'px';
-    document.getElementById("lege_img").style.height=0.15*y0+'px';
+    enunt[1].style.height=0.125*y0+'px';
+    document.getElementById("lege_img").style.width=0.4*x0+'px';
+    document.getElementById("lege_img").style.height=0.174*y0+'px';
+    document.getElementById("lege_img").style.marginBottom=0.01*y0+'px';
     
     $(".resizeText5").resizeText0();
     $(".resizeText6").resizeText0();

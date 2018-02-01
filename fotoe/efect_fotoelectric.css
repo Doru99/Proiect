@@ -179,6 +179,7 @@ yellow{
     opacity:1;
     display:inline-block;    
     vertical-align: middle;
+    background-color: rgba(0,0,0,0.7);
 }
 #aop_cont{
     display:inline-block;
@@ -192,24 +193,25 @@ yellow{
     background-image:url(imagini/efect_fotoe.png);
 }
 #elem_desc{
-    background-color:rgba(0,0,0,0.7);
+    background-color:rgba(0,0,0,0);
 }
 
 .lege_cont{
     transition:1s all;
     display: inline-block;
     vertical-align: middle;
+    background-color: rgba(0,0,0,0.7)
 }
 
 .lege_en{
     transition:1s all;
     display: inline-block;
     vertical-align: middle;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0);
 }
 
 #lege_img{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0);
     background-image: url(imagini/grafic.png);
 }
 
