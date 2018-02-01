@@ -119,7 +119,7 @@ window.onload = function (){
     var enunt=document.getElementsByClassName("lege_en");
     var numar=document.getElementsByClassName("lege_numar");
     
-    for (var i = 0; i < cont.length; i+= 2) {
+    for (var i = 0; i < cont.length; i+= 3) {
         cont[i].style.marginTop=0.08*y0+'px';
         cont[i].style.marginLeft=0.25*x0+'px';
         enunt[i].style.width=0.5*x0+'px';
@@ -127,7 +127,7 @@ window.onload = function (){
         numar[i].style.width=0.5*x0+'px';
         numar[i].style.height=0.075*y0+'px';
     }
-    for (var i = 1; i < cont.length; i+= 2) {
+    for (var i = 1; i < cont.length-1; i+= 1) {
         cont[i].style.marginTop=0.08*y0+'px';
         cont[i].style.marginLeft=0.1*x0+'px';
         enunt[i].style.width=0.8*x0+'px';
@@ -136,8 +136,9 @@ window.onload = function (){
         numar[i].style.height=0.075*y0+'px';
     }
     enunt[1].style.width=0.4*x0+'px';
+    enunt[3].style.height=0.1*y0+'px';
     document.getElementById("lege_img").style.width=0.4*x0+'px';
-    document.getElementById("lege_img").style.height=0.174*y0+'px';
+    document.getElementById("lege_img").style.height=0.274*y0+'px';
     document.getElementById("lege_img").style.marginBottom=0.01*y0+'px';
     document.getElementById("lege_img").style.marginTop=0.05*y0+'px';
     
