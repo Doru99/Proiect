@@ -104,7 +104,7 @@ window.onload = function (){
         document.getElementById("intro").style.marginTop=0.05*y0+'px';
         document.getElementById("intro").style.width=0.3*x0+'px';
         document.getElementById("intro").style.height=0.25*y0+'px';
-        document.getElementById("intro").style.left=0.35*x0+'px';
+        document.getElementById("intro").style.left=0.35*x0+'px';   document.body.style.backgroundSize="15%,15%"; document.body.style.backgroundImage="url(imagini/optic_left.png),url(imagini/optic_right.png)";
     },4000);
     setTimeout(function(){
         document.body.style.overflowY="scroll";
