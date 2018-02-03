@@ -6,6 +6,7 @@ body{
 	background-position:5%,95%;
 	transition:1s ease-in-out;
     overflow-x:hidden;
+    overflow-y:hidden;
 }
 
 @font-face{
@@ -54,7 +55,7 @@ ul{	position:fixed;
 	z-index:5;
 	white-space: nowrap;	
 	border-bottom:3px solid #9DDFF7;
-	opacity:1;
+	opacity:0;
 	display:block;
 	list-style-type: none;
     transition:1s all;
@@ -124,7 +125,7 @@ yellow{
     font-family: bebasbold;
     position:relative;
     transition:1s ease-out;
-    opacity:1;
+    opacity:0;
     margin-left: auto;
     text-align: center;
 }
@@ -134,7 +135,7 @@ yellow{
     width:60%;
     margin:0 auto;
     border:1px solid #9DDFF7;
-    opacity:1;
+    opacity:0;
     transition:1s all;
 }
 
@@ -154,29 +155,40 @@ yellow{
     color:white;
     font-family: geometria;
     text-shadow:0px 0px 5px black;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0);
     text-align: center;
     margin: 0 auto;
 }
 
 .imagine{
     position:relative;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0);
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
 }
 
+#intro{
+    transition: 0s all;
+    opacity: 1;
+    background-image: url(imagini/intro.png);
+    transform: rotateY(180deg);
+}
+
 #def_cont{
     transition:1s all;
-    opacity:1;
+    opacity:0;
     display:inline-block;
     vertical-align: middle;
 }
 
+#def_desc{
+    background-color: rgba(0,0,0,0.7);
+}
+
 #elem_cont{
     transition:1s all;
-    opacity:1;
+    opacity:0;
     display:inline-block;    
     vertical-align: middle;
     background-color: rgba(0,0,0,0.7);
@@ -200,7 +212,8 @@ yellow{
     transition:1s all;
     display: inline-block;
     vertical-align: middle;
-    background-color: rgba(0,0,0,0.7)
+    background-color: rgba(0,0,0,0.7);
+    opacity:0;
 }
 
 .lege_en{
@@ -221,6 +234,7 @@ yellow{
     display: inline-block;
     vertical-align: middle;
     background-color:rgba(0,0,0,0.7);
+    opacity: 0;
 }
 
 #energie_text{

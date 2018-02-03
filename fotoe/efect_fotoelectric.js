@@ -87,6 +87,45 @@ window.onload = function (){
             
         })
 	}
+    document.getElementById("intro").style.marginTop=0.25*y0+'px';
+    document.getElementById("intro").style.width=0.6*x0+'px';
+    document.getElementById("intro").style.height=0.5*y0+'px';
+    document.getElementById("intro").style.left=-0.6*x0+'px';
+    
+    setTimeout(function(){
+        document.getElementById("intro").style.transitionDuration="2s";
+        document.getElementById("intro").style.left=0.2*x0+'px';        
+               }, 500);
+    setTimeout(function(){
+        document.getElementById("intro").style.transitionDuration="1s";
+        document.getElementById("intro").style.transform="rotateY(360deg)";
+    }, 2500);
+    setTimeout(function(){
+        document.getElementById("intro").style.marginTop=0.05*y0+'px';
+        document.getElementById("intro").style.width=0.3*x0+'px';
+        document.getElementById("intro").style.height=0.25*y0+'px';
+        document.getElementById("intro").style.left=0.35*x0+'px';
+    },4000);
+    setTimeout(function(){
+        document.body.style.overflowY="scroll";
+        document.getElementById("bara1").style.opacity=1;
+        document.getElementById("lista").style.opacity=1;
+    },5000);
+    setTimeout(function(){
+        document.getElementById("def_cont").style.opacity=1;
+        document.getElementById("elem_cont").style.opacity=1;
+        document.getElementById("lege1").style.opacity=1;
+        document.getElementById("lege2").style.opacity=1;
+        document.getElementById("lege3").style.opacity=1;
+        document.getElementById("lege4").style.opacity=1;
+        document.getElementById("energie_cont").style.opacity=1;
+    },6000);
+    setTimeout(function(){
+        document.getElementById("fotoe_header").style.opacity=1;
+        document.getElementById("bara2").style.opacity=1;
+        document.getElementById("lm_header").style.opacity=1;
+        document.getElementById("bara3").style.opacity=1;
+    },7000)
     
     document.getElementById("def_cont").style.marginLeft=0.04*x0+'px';
     document.getElementById("def_titlu").style.height=0.1*y0+"px";
