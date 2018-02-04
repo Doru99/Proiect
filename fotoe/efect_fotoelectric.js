@@ -125,7 +125,13 @@ window.onload = function (){
         document.getElementById("bara2").style.opacity=1;
         document.getElementById("lm_header").style.opacity=1;
         document.getElementById("bara3").style.opacity=1;
-    },7000)
+    },7000);
+    
+    var text=document.getElementsByClassName("text");
+    for (var i = 0; i < text.length; i++) {
+        text[i].style.marginLeft=0.0075*x0+'px';
+        text[i].style.marginRight=0.0075*x0+'px';
+    }
     
     document.getElementById("def_cont").style.marginLeft=0.04*x0+'px';
     document.getElementById("def_titlu").style.height=0.1*y0+"px";
@@ -144,8 +150,7 @@ window.onload = function (){
     document.getElementById("aop_text").style.height=0.2*y0+'px';
     document.getElementById("aop_img").style.width=0.5*x0+'px';
     document.getElementById("aop_img").style.height=0.35*y0+'px';
-    
-    document.getElementById("elem_titlu").style.width=0.5*x0+'px';
+    document.getElementById("aop_img").style.marginLeft=0.0075*x0+'px';
     document.getElementById("elem_titlu").style.height=0.1*y0+'px';
     $(".resizeText2").resizeText0();
     $(".resizeText3").resizeText0();
@@ -163,7 +168,6 @@ window.onload = function (){
         cont[i].style.marginLeft=0.25*x0+'px';
         enunt[i].style.width=0.5*x0+'px';
         enunt[i].style.height=0.3*y0+'px';
-        numar[i].style.width=0.5*x0+'px';
         numar[i].style.height=0.075*y0+'px';
     }
     for (var i = 1; i < cont.length-1; i+= 1) {
@@ -171,7 +175,6 @@ window.onload = function (){
         cont[i].style.marginLeft=0.1*x0+'px';
         enunt[i].style.width=0.8*x0+'px';
         enunt[i].style.height=0.3*y0+'px';
-        numar[i].style.width=0.8*x0+'px';
         numar[i].style.height=0.075*y0+'px';
     }
     enunt[1].style.width=0.4*x0+'px';
@@ -200,10 +203,10 @@ window.onload = function (){
     document.getElementById("energie_img").style.marginLeft=0.1*x0+'px';
     document.getElementById("energie_img").style.width=0.6*x0+'px';
     document.getElementById("energie_img").style.height=0.3*y0+'px';
-    document.getElementById("energie_titlu").style.width=0.8*x0+'px';
     document.getElementById("energie_titlu").style.height=0.1*y0+'px';
     
     
     $(".resizeText13").resizeText0();
     $(".resizeText14").resizeText0();
+    
 }
