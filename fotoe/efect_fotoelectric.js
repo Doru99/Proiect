@@ -113,6 +113,8 @@ window.onload = function (){
     },5000);
     setTimeout(function(){
         document.getElementById("def_cont").style.opacity=1;
+    },5500);
+    setTimeout(function(){
         document.getElementById("elem_cont").style.opacity=1;
         document.getElementById("lege1").style.opacity=1;
         document.getElementById("lege2").style.opacity=1;
