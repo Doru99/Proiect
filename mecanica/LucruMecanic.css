@@ -179,6 +179,7 @@ yellow{
     border-top-right-radius: 10%;
     vertical-align: middle;
     border: none;
+    box-shadow:0px 0px 15px black;
 }
 
 #def_cont{
@@ -191,6 +192,15 @@ yellow{
 
 #def_text{
     background-color: rgba(0,0,0,0);
+}
+
+#def_formula{
+    float: right;
+    border-radius:50%;
+    box-shadow:0px 0px 15px black;
+    display:block;
+    background-image: url(imagini/ecu1.png);
+    background-color: #98EF8E;
 }
 
 #addf_cont{
@@ -229,6 +239,16 @@ yellow{
     float: left;
 }
 
+#lm_formula{
+    float: left;
+    border-radius:50%;
+    box-shadow:0px 0px 15px black;
+    display:block;
+    background-image: url(imagini/ecu2.png);
+    background-color: #98EF8E;
+    transition: 1s all;
+}
+
 #cons_cont{
     transition:1s all;
     opacity:1;
@@ -253,6 +273,10 @@ yellow{
     background-color: rgba(0,0,0,0);
 }
 
+#dis_text{
+    background-color: rgba(0, 0, 0, 0);
+}
+
 #grafic_cont{
     transition:1s all;
     opacity:1;
@@ -265,7 +289,20 @@ yellow{
     background-color: rgba(0, 0, 0, 0);
 }
 
-#grafic_img{
+#grafic_formula{
+    background-image: url(imagini/ecu4.png);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#img_cont{
+    transition:1s all;
+    opacity:1;
+    display:inline-block;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#img_gr{
     background-image: url(imagini/grafic.png);
     background-color: rgba(0, 0, 0, 0);
 }

@@ -17,43 +17,59 @@
     </ul>
     
     <div id="def_cont">
-        <div id="def_text" class="text resizeText0">Se numeşte <red>LUCRU MECANIC</red> mărimea fizică scalară egală cu produsul dintre <blue>vectorul forţă</blue> si <yellow>vectorul deplasare</yellow>.Unitatea de măsură in sistem internaţional a lucrului mecanic este Joule.</div>
         <div id="def_titlu" class="titlu resizeText1">Lucru Mecanic</div>
+        <div id="def_text" class="text resizeText0">Se numeşte <red>LUCRU MECANIC</red> mărimea fizică scalară egală cu produsul dintre <green>vectorul forţă</green> si <green>vectorul deplasare</green>.Unitatea de măsură in sistem internaţional a lucrului mecanic este Joule.</div>
     </div>
+    <div id="def_formula" class="imagine"></div>
+    
+    <div id="prop_header" class="header">Proprietăţi</div>
+    <div id="bara1" class="bara"></div>
     
     <div id="addf_cont">
-        <div id="addf_titlu" class="titlu resizeText2">Proprietăţi</div>
+        <div id="addf_titlu" class="titlu resizeText2">Adivitate forţe</div>
         <div id="addf_text" class="text resizeText3"><red>Lucrul mecanic este aditiv</red> în raport cu <strong>forţele</strong>, deci <red>lucrul mecanic al fortei rezultante</red> din compunerea a doua sau mai multe forţe este egal cu <strong>suma lucrurilor mecanice a fiecărei forţe în parte</strong>.</div>
     </div>
     
     <div id="addd_cont">
-        <div id="addd_titlu" class="titlu resizeText4">Proprietăţi</div>
+        <div id="addd_titlu" class="titlu resizeText4">Aditivitate deplasare</div>
         <div id="addd_text" class="text resizeText5"><red>Lucrul mecanic este aditiv</red> în raport cu <strong>deplasările</strong>, deci <red>lucrul mecanic al unei forţe pe o distanţă</red> este egal cu <strong>suma lucrurilor mecanice consumate pe fiecare porţiune din distanţa totală</strong>.</div>
     </div>
     
+    <div id="spec_header" class="header">Lucru mecanic pentru diferite forţe</div>
+    <div id="bara2" class="bara"></div>
+    
+    <div id="lm_formula" class="imagine"></div>
     <div id="lm_cont">
-        <div id="lm_text" class="text resizeText6"><red>Lucrul mecanic al greutăţii</red> este egal cu produsul dintre <blue>forţa de greutate</blue> si diferenţa cu semn schimbat dintre <yellow>înălţimea iniţială şi cea finală</yellow>.</div>
+        <div id="lm_text" class="text resizeText6"><red>Lucrul mecanic al greutăţii</red> este egal cu produsul dintre <green>forţa de greutate</green> si diferenţa cu semn schimbat dintre <green>înălţimea iniţială şi cea finală</green>.</div>
         <button id="lm_greutate" class="forte resizeText7" onclick="schimba(0)">Greutate</button>
         <br>
-        <button id="lm_frecare" class="forte resizeText8" onclick="schimba(1)">Frecare</button>
-        <button id="lm_next" class="forte resizeText9" onclick="schimba(2)">Next</button>
+        <button id="lm_elastic" class="forte resizeText8" onclick="schimba(1)">Elastic</button>
+        <button id="lm_frecare" class="forte resizeText9" onclick="schimba(2)">Frecare</button>
     </div>
     
+    <div id="tip_header" class="header">Tipuri de forţe</div>
+    <div id="bara3" class="bara"></div>
     <div id="cons_cont">
-        <div id="cons_text" class="text resizeText10"><strong>Forţele</strong> a căror <red>lucru mecanic</red> nu depinde de poziţiile intermediare, ci doar de <yellow>coordonatele iniţiale si finale</yellow>, se numesc <blue>forţe conservative.</blue></div>
+        <div id="cons_text" class="text resizeText10">Forţele a căror lucru mecanic nu depinde de poziţiile intermediare, ci doar de <green>coordonatele iniţiale si finale</green>, se numesc <red>forţe conservative.</red></div>
         <div id="cons_titlu" class="titlu resizeText11">Forţe conservative</div>
     </div>
     
     <div id="dis_cont">
-        <div id="dis_text" class="text resizeText12"><strong>Forţele</strong> a căror <red>lucru mecanic</red> este negativ se numesc <blue>forţe disipative</blue>.</div>
+        <div id="dis_text" class="text resizeText12">Forţele a căror <red>lucru mecanic</red> este negativ se numesc <green>forţe disipative</green>.</div>
         <div id="dis_titlu" class="titlu resizeText13">Forţe disipative</div>
     </div>
     
+    <div id="grafic_header" class="header">Determinare LM</div>
+    <div id="bara4" class="bara"></div>
     <div id="grafic_cont">
         <div id="grafic_titlu" class="titlu resizeText14">Calcul Lucru Mecanic</div>
-        <div id="grafic_text" class="text resizeText15"><blue>Pe cale grafică</blue>, lucrul mecanic poate fi determinat folosind <red>aria</red> cuprinsă între <yellow>graficul forţei</yellow> şi <green>axa deplasării</green>.
-            <div id="grafic_img" class="imagine"></div>
+        <div id="grafic_text" class="text resizeText15">Pe cale grafică, lucrul mecanic poate fi determinat folosind <red>aria</red> cuprinsă între <green>graficul forţei şi axa deplasării</green>.
+            <div id="grafic_formula" class="imagine"></div>
         </div>
+    </div>
+    <div id="img_cont">
+        <div id="img_titlu" class="titlu resizeText16">Grafic</div>
+        <div id="img_gr" class="imagine"></div>
     </div>
 
     <script src="jquery-3.1.1.min.js"></script>

@@ -90,12 +90,18 @@ window.onload = function (){
     
     document.getElementById("def_titlu").style.height=0.1*y0+'px';
     document.getElementById("def_text").style.height= 0.2*y0+'px';
-    document.getElementById("def_text").style.width= 0.6*x0+'px';
-    document.getElementById("def_cont").style.marginLeft= 0.2*x0+'px';
+    document.getElementById("def_text").style.width= 0.5*x0+'px';
+    document.getElementById("def_cont").style.marginLeft= 0.15*x0+'px';
     document.getElementById("def_cont").style.marginTop= 0.1*y0+'px';
+    document.getElementById("def_cont").style.marginBottom= 0.1*y0+'px';
+    document.getElementById("def_formula").style.height= 0.15*y0+'px';
+    document.getElementById("def_formula").style.width= 0.1*x0+'px';
+    document.getElementById("def_formula").style.marginRight= 0.15*x0+'px';
+    document.getElementById("def_formula").style.marginTop= 0.15*y0+'px';
     $(".resizeText0").resizeText0();
     $(".resizeText1").resizeText0();
     
+    document.getElementById("prop_header").style.fontSize= 0.1*y0+'px';
     document.getElementById("addf_titlu").style.height= 0.05*y0+'px';
     document.getElementById("addf_text").style.height= 0.2*y0+'px';
     document.getElementById("addf_text").style.width= 0.35*x0+'px';
@@ -111,22 +117,30 @@ window.onload = function (){
     $(".resizeText4").resizeText0();
     $(".resizeText5").resizeText0();
     
+    document.getElementById("spec_header").style.marginTop= 0.075*y0+'px';
+    document.getElementById("spec_header").style.fontSize= 0.1*y0+'px';
+    document.getElementById("lm_formula").style.marginLeft= 0.1*y0+'px';
+    document.getElementById("lm_formula").style.marginTop= 0.25*y0+'px';
+    document.getElementById("lm_formula").style.height= 0.15*y0+'px';
+    document.getElementById("lm_formula").style.width= 0.1*x0+'px';
     document.getElementById("lm_cont").style.marginLeft = 0.1*x0+'px';
-    document.getElementById("lm_cont").style.marginTop= 0.2*y0+'px';
-    document.getElementById("lm_cont").style.marginBottom= 0.2*y0+'px';
-    document.getElementById("lm_text").style.width= 0.7*x0+'px';
+    document.getElementById("lm_cont").style.marginTop= 0.1*y0+'px';
+    document.getElementById("lm_cont").style.marginBottom= 0.15*y0+'px';
+    document.getElementById("lm_text").style.width= 0.6*x0+'px';
     document.getElementById("lm_text").style.height= 0.5*y0+'px';
     document.getElementById("lm_greutate").style.width= 0.1*x0+'px';
     document.getElementById("lm_greutate").style.height= 0.1*y0+'px';
     document.getElementById("lm_frecare").style.width= 0.1*x0+'px';
     document.getElementById("lm_frecare").style.height= 0.1*y0+'px';
-    document.getElementById("lm_next").style.width= 0.1*x0+'px';
-    document.getElementById("lm_next").style.height= 0.1*y0+'px';
+    document.getElementById("lm_elastic").style.width= 0.1*x0+'px';
+    document.getElementById("lm_elastic").style.height= 0.1*y0+'px';
     $(".resizeText6").resizeText0();
     $(".resizeText7").resizeText0();
     $(".resizeText8").resizeText0();
     $(".resizeText9").resizeText0();
     
+    document.getElementById("bara3").style.marginBottom= 0.05*y0+'px';
+    document.getElementById("tip_header").style.fontSize= 0.1*y0+'px';
     document.getElementById("cons_cont").style.marginLeft= 0.1*x0+'px';
     document.getElementById("cons_text").style.width= 0.35*x0+'px';
     document.getElementById("cons_text").style.height= 0.25*y0+'px';
@@ -140,19 +154,27 @@ window.onload = function (){
     $(".resizeText12").resizeText0();
     $(".resizeText13").resizeText0();
     
+    document.getElementById("grafic_header").style.marginTop= 0.05*y0+'px';
+    document.getElementById("grafic_header").style.fontSize= 0.1*y0+'px';
     document.getElementById("grafic_cont").style.marginTop= 0.1*y0+'px';
-    document.getElementById("grafic_cont").style.marginLeft= 0.15*x0+'px';
-    document.getElementById("grafic_cont").style.marginBottom= 0.2*x0+ 'px';
-    document.getElementById("grafic_text").style.width= 0.7*x0+'px';
-    document.getElementById("grafic_text").style.height= 0.7*y0+'px';
+    document.getElementById("grafic_cont").style.marginLeft= 0.05*x0+'px';
+    document.getElementById("grafic_text").style.width= 0.5*x0+'px';
+    document.getElementById("grafic_text").style.height= 0.45*y0+'px';
     document.getElementById("grafic_titlu").style.height= 0.1*y0+'px';
-    document.getElementById("grafic_img").style.height= 0.6*y0+'px';
+    document.getElementById("grafic_formula").style.height= 0.18*y0+'px';
+    document.getElementById("img_cont").style.marginLeft= 0.1*x0+'px';
+    document.getElementById("img_cont").style.marginTop= 0.1*x0+'px';
+    document.getElementById("img_titlu").style.height= 0.1*y0+'px';
+    document.getElementById("img_gr").style.width= 0.3*x0+'px';
+    document.getElementById("img_gr").style.height= 0.35*y0+'px';
     $(".resizeText14").resizeText0();
     $(".resizeText15").resizeText0();
+    $(".resizeText16").resizeText0();
 }
 
-var a=["<red>Lucrul mecanic al greutăţii</red> este egal cu produsul dintre <blue>forţa de greutate</blue> si diferenţa cu semn schimbat dintre <yellow>înălţimea iniţială şi cea finală</yellow>.", "<red>Lucrul mecanic al forţei elastice</red> este egal cu diferenţa <strong>semiproduselor</strong> dintre <blue>constanta de elasticitate</blue> şi <yellow>pătratul coordonatei</yellow> iniţiale, respectiv finale.", "Mai adaug forte cand le gasesc"];
+var a=[["url('imagini/ecu2.png')","<red>Lucrul mecanic al greutăţii</red> este egal cu produsul dintre <green>forţa de greutate</green> si diferenţa cu semn schimbat dintre <green>înălţimea iniţială şi cea finală</green>."],["url('imagini/ecu3.png')", "<red>Lucrul mecanic al forţei elastice</red> este egal cu diferenţa semiproduselor dintre <green>constanta de elasticitate</green> şi <green>pătratul coordonatei</green> iniţiale, respectiv finale."],["url('imagini/ecu5.png')", "<red>Lucrul mecanic al forţei de frecare</red> este egal cu produsul dintre <green>forţa de frecare</green> şi diferenţa cu semn schimbat dintre <green>coordonata iniţială şi cea finală</green>"]];
 function schimba(x) {
-    document.getElementById("lm_text").innerHTML= a[x];
+    document.getElementById("lm_text").innerHTML= a[x][1];
     $(".resizeText6").resizeText0();
+    document.getElementById("lm_formula").style.backgroundImage= a[x][0];
 }
